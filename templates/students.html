@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $(function(){
+        $("#btn").click(function(){
+
+        });
+    })
+</script>
+<body>
+<h2>학생 점수</h2>
+<form action="students" method="post">
+    이름 : <input type="text" name="names" id="names">
+    <input type="submit" value="확인" id="btn">
+</form>
+<hr>
+<img src="{{fname}}" width="300" height="300">
+<!--<img id="stu_img" src="{{url_for('static', filename='student.png')}}" />-->
+</body>
+<hr>
+<h1><font color="red">{{msg}}</font></h1>
+</html>
